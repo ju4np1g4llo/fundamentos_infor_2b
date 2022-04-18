@@ -43,7 +43,7 @@ def numeros(numero1, numero2, numero3):
 
 def horas():
     minutos = int(input("Diga la cantidad de minutos: "))
-    horas = (minutos/60).split()
+    horas = (minutos/60)
     print(horas)
 
            #no le encuentro la vuelta
