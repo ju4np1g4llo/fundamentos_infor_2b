@@ -46,7 +46,7 @@ def horas():
     horas = (minutos/60)
     print(horas)
 
-           #no le encuentro la vuelta
+          
 
 ##### **Ejercicio 7**
 #Un comerciante, el cual tiene un sueldo base, recibe un 10% extra por comisión por cada venta que realiza. 
