@@ -84,7 +84,8 @@ class Golondrina():
         return 150 < self.energia < 300
 
 class Gorrion():
-    def __init__(self,grAc,kmAc):
+    def __init__(self,grAc,kmAc,energia):
+        self.energia = energia
         self.grAc= grAc
         self.kmAc= kmAc
         self.liGr=[] 
@@ -95,6 +96,8 @@ class Gorrion():
     def volar(self, kms): 
         self.liKm.append.appen(kms)
         self.kmAc+=kms
+    def equilibrio(self):
+        return 150 < self.energia < 300
 
 class Ornitologo():
     def __init__(self):
@@ -110,18 +113,17 @@ class Ornitologo():
             ave.comer_alpiste(10)
         print("Rutina Realizada para todas las aves")
     def estaEnEquilibrio(self):
-        for ave in self.lista_aves:
-            if ave.equilibrio:
-                return ave
+        return [self.lista_aves[i].equilibrio() for i in range(len(self.lista_aves))]
 
 pepita = Golondrina(100)
 pepito = Golondrina(200)
-roberto = Gorrion(100,0)
-roberta =Gorrion(200,0)
+roberto = Gorrion(100,0,200)
+roberta =Gorrion(200,0,100)
 pepe=Ornitologo()
 pepe.estudiarAve(pepita)
 pepe.estudiarAve(roberto)
 pepe.estudiarAve(roberta)
+pepe.estaEnEquilibrio()
 pepe.realizarRutinaSobreAves()
 pepita.energia
 pepito.energia
@@ -147,7 +149,6 @@ class Auto(MedioDeTransporte):
 class Moto(MedioDeTransporte):
     def entran(self,personas):
         return personas <= 2
-
 
 
 
