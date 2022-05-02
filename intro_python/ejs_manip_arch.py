@@ -2,18 +2,55 @@
 
 ##### **Ejercicio 1**
 #Realizá un programa que lea un archivo e imprima cuántas líneas de ese archivo **no** empiezan con una determinada letra (por ejemplo que imprima cuántas líneas no empiezan con "P").
+from re import I
+
+
+def noP(archivo):
+    with open(archivo,"r") as f:
+        hayP = f.read().split()
+        sinP=[]
+        for i in hayP:
+            if i[0] == "P":
+                None
+            elif i[0] == "p":         #podia haber hecho si era != a P/p que sume a la lista en vez de 2 None
+                None
+            else:
+                sinP.append(i)
+        print(len(sinP)) 
+        #print(sinP)
 
 ##### **Ejercicio 2**
 #Escribí un programa que lea un archivo e imprima las primeras n líneas.
 
+def primeras_lineas(archivo,numero):
+    with open(archivo,"r") as f:
+        a = f.readlines()
+        return a[0:numero]
+
 ##### **Ejercicio 3**
 #Escribí un programa que lea un archivo, guarde las líneas del archivo en una lista y luego imprima las n últimas.
+
+def ultimas_lineas(archivo,numero):
+    with open(archivo,"r") as f:
+        a = f.readlines()
+        lenA = len(a)
+        lineasInic = lenA - numero
+        print(a[lineasInic:lenA])
 
 ##### **Ejercicio 4**
 #Hacé un programa que lea un archivo, cuente la cantidad de palabras del archivo y luego imprima el resultado.
 
+def contar(archivo):
+    with open(archivo,"r") as f:
+        print(len(f.read().split()))
+
 ##### **Ejercicio 5**
 #Escribí un programa que lea un archivo, reemplace una letra por esa misma letra más un salto de línea y lo guarde en otro archivo.
+
+#def reemplazar(archivo,letra):
+    #with open(archivo,"r") as f:
+        #palabras = f.read().split()         #solo se me ocurre con re, x lo que no estaria bien ya que esto era antes de ver re
+'''no terminado'''                     
 
 ##### **Ejercicio 6**
 
