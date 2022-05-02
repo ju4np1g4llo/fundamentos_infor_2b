@@ -136,7 +136,8 @@ def reemplazar(string):
 #Escribí un programa que reemplace los dos primeros caracteres no alfanúmericos por guiones bajos.
 
 def dos_no_alfa(string):
-    print(re.sub(r"\W","_",string,2))
+    print(re.sub(r"\W","_",string,2))   #la llave dice que hayan 2 que esten juntos, el 2 a la derecha del string indica que sean los primeros 2 que aparecen en todo el string.
+
 
 ##### **Ejercicio 14**
 #Realizá un programa que reemplace los espacios y tabulaciones por punto y coma.
