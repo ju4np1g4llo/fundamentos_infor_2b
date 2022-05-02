@@ -149,4 +149,6 @@ def reemplazar2(string):
 #Realizá un programa que validar si una cuenta de mail está escrita correctamente.
 
 def mail(mail):
-    print(bool(re.match(r"(\S+)@(\w+)\.(\w+)",mail)))                                                           
+    print(bool(re.match(r"(\S+)@(\w+)\.(\w+)",mail)))                                           
+    print(bool(re.match(r"[a-zA-Z0-9]+[-_\.]*[a-zA-Z0-9]+@[a-z]{1,9}\.[a-z]{2,6}",mail)))
+    '''CUALQUIERA DE LOS 2 FUNCIONA'''
