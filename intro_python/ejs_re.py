@@ -150,5 +150,5 @@ def reemplazar2(string):
 
 def mail(mail):
     print(bool(re.match(r"(\S+)@(\w+)\.(\w+)",mail)))                                           
-    print(bool(re.match(r"[a-zA-Z0-9]+[-_\.]*[a-zA-Z0-9]+@[a-z]{1,9}\.[a-z]{2,6}",mail)))
+    print(bool(re.match(r"[a-zA-Z0-9]+[-_\.]*[a-zA-Z0-9]+@[a-z]{1,9}\.[a-z]{2,6}(\.[a-z]{2,4}){0,1}",mail)))
     '''CUALQUIERA DE LOS 2 FUNCIONA'''
