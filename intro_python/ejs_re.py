@@ -81,7 +81,7 @@ def verLista(string):
     print(aparecen)
 
 ##### **Ejercicio 7**
-Realizá un programa que encuentre un string que contenga solamente letras minúsculas, mayúsculas, espacios y números.
+#Realizá un programa que encuentre un string que contenga solamente letras minúsculas, mayúsculas, espacios y números.
 
 def minMayEspN(string):
     if re.search(r"([^\w\s]+)",string):
