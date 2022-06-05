@@ -49,6 +49,6 @@ personas = pd.read_csv(r"C:\Users\juanp\Desktop\personas_2011.csv", sep=";")
 
 categorias = pd.read_csv(r"C:\Users\juanp\Desktop\ref_categoria_conicet.csv", sep=";")
 
-print(categorias.columns)
-print(personas.columns)
+#print(categorias.columns)
+#print(personas.columns)
 #tienen en comun la columna categoria_conicet_idc
